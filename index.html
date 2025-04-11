@@ -21,24 +21,24 @@
           <div class="form-ui">
             <article id="login">
                 <!-- action="https://httpbin.org/get" method="get" -->
-              <form>
+              <form action="https://httpbin.org/get" method="get">
                 <label for="name">Full Name</label>
-                <input id="name" type="text" placeholder="What should we call you?" aria-describedby="name-length-error" aria-invalid="false" aria-required="true" required>
+                <input id="name" name="name" type="text" placeholder="What should we call you?" aria-describedby="name-length-error" aria-invalid="false" aria-required="true" required>
                 <p id="name-length-error">Name should be atleast 3 letters long</p>
   
                 <label for="email">Email</label>
-                <input id="email" type="email" placeholder="john@doe.com" aria-describedby="taken-email-error" aria-invalid="true" aria-required="true" required>
+                <input id="email" name="email" type="email" placeholder="john@doe.com" aria-describedby="taken-email-error" aria-invalid="true" aria-required="true" required>
                 <p id="taken-email-error">Email is already taken</p>
   
                 <label for="password">Enter Password</label>
-                <input id="password" type="password" placeholder="xxxxxxxxx" aria-describedby="password-length-error" aria-invalid="false" aria-required="true" required>
+                <input id="password" name="password" type="password" placeholder="xxxxxxxxx" aria-describedby="password-length-error" aria-invalid="false" aria-required="true" required>
                 <p id="password-length-error">Password must be atleast 8 characters long</p>
   
                 <label for="confirm-password">Confirm Password</label>
-                <input id="confirm-password" type="password" placeholder="xxxxxxxxx" aria-describedby="password-match-error" aria-invalid="false" aria-required="true" required>
+                <input id="confirm-password" name="confirm-password" type="password" placeholder="xxxxxxxxx" aria-describedby="password-match-error" aria-invalid="false" aria-required="true" required>
                 <p id="password-match-error">Passwords must match</p>
   
-                <button>Update Profile</button>
+                <input id="button" type="submit" value="Update Profile">
               </form>
             </article>
 

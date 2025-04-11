@@ -50,7 +50,7 @@ form p {
   display: block;
 }
 
-button {
+#button {
   border: none;
   border-radius: 10px;
   background-color: black;
